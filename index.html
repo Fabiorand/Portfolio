@@ -295,7 +295,7 @@
 }
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 100%) {
   #contact footer {
     padding: 15px 10px;
     font-size: 0.9em;
@@ -491,6 +491,7 @@
   transform: translateY(-2px);
 }
 
+
 /* Responsive */
 @media (max-width: 1024px) {
   .project-card {
@@ -517,7 +518,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .skill-card {
-    width: 45%;
+    width: 100%;
   }
 }
 
@@ -540,56 +541,215 @@
       display: none;
     }
   }
-  /* Veille Technologique */
+  /* GLPI Section */
+#glpi {
+  padding: 60px 20px;
+  background: #f4f4f9;
+}
+
+#glpi h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #002855;
+}
+
+/* Conteneur des cartes */
+.glpi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Cartes individuelles */
+.glpi-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 4px solid #0056b3;
+}
+
+.glpi-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #002855;
+}
+
+.glpi-card p {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.glpi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .glpi-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .glpi-card {
+    width: 100%;
+  }
+}
+
   .veille-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
 
-  .veille-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    display: flex;
+.veille-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.veille-card:hover {
+  transform: translateY(-5px);
+}
+
+.veille-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.veille-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.veille-card a:hover {
+  text-decoration: underline;
+}
+ /* Contact page styling */
+#contact {
+  background: #f4f4f9;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #002855;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info, .contact-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.contact-info h3, .contact-form h3 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #002855;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0,86,179,0.3);
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #003f80;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
   }
+}
 
-  .veille-card h3 {
-    font-size: 1.3em;
-    color: #002855;
-    margin-bottom: 12px;
-  }
 
-  .veille-card p {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 15px;
-    line-height: 1.5;
-  }
 
-  .veille-card a {
-    align-self: flex-start;
-    text-decoration: none;
-    font-weight: bold;
-    color: #0056b3;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
 
-  .veille-card a:hover {
-    border-bottom: 2px solid #0056b3;
-    color: #003f80;
-  }
 
-  .veille-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
 
 
 
@@ -663,19 +823,7 @@
     }
 
     /* small tweak to footer social on tiny screens */
-    @media (max-width: 480px) {
-      #contact .social-links {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        align-items: center;
-      }
-      #contact .social-links a {
-        display: inline-block;
-        width: auto;
-        margin: 6px 0;
-      }
-    }
+    
 
     /* simple animation for opened burger (optional but subtle) */
     .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -699,6 +847,8 @@
         <a href="#experience">Experience</a>
         <a href="#formation">Formation</a>
         <a href="#aptitudes">Compétence</a>
+        <a href="#glpi">GLPI</a>
+        
         <a href="#veilleTech">Veille Tech</a>
         <a href="#projets">Projets</a>
         <a href="#contact">Contact</a>
@@ -846,15 +996,13 @@
       <div class="project-overlay">
         <h4>SUPERCAR</h4>
         <div class="project-buttons">
-                 <button onclick="window.location.href='../Projet_supercar/admin/Acceuil.php'">
-  Admin
-</button>
-          <button onclick="window.location.href='../Projet_supercar/Clients/Accueil/accueil.php'">
-  Clients
-</button>
+          <button onclick="window.location.href='ContexteSup.pdf'">Contexte</button>
+          <button onclick="window.location.href='https://www.canva.com/design/DAG4kfvF48w/dXCPOAQ_e5NvmcdyrLWefA/edit?utm_content=DAG4kfvF48w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'"> Présentation</button>
 
-          <button>Contexte</button>
-          <button>Présentation</button>
+          <button onclick="window.location.href='FicheDsupercar.docx'">Fiche descriptive</button>
+          <button>Rapport</button>
+          <button onclick="window.location.href='https://fabio-hkj.alwaysdata.net/'">Démo</button>
+
         </div>
       </div>
     </div>
@@ -862,10 +1010,11 @@
       <div class="project-overlay">
         <h4>VMS</h4>
         <div class="project-buttons">
-          <button>Admin</button>
-          <button>Clients</button>
           <button>Contexte</button>
           <button>Présentation</button>
+          <button>Fiche descriptive</button>
+          <button>Rapport</button>
+          <button>Démo</button>
         </div>
       </div>
     </div>
@@ -877,10 +1026,10 @@
       <div class="project-overlay">
         <h4>Maintenance Mobile App</h4>
         <div class="project-buttons">
-          <button>Admin</button>
-          <button>Clients</button>
-          <button>Contexte</button>
-          <button>Présentation</button>
+          <button onclick="window.location.href='https://www.canva.com/design/DAGzmGVEE1k/i6UggudJ3h1PwU_ldpIJwg/edit?utm_content=DAGzmGVEE1k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'">Présentation</button>
+          <button onclick="window.location.href='AttestationSt1.pdf'">Attestation</button>
+          <button>Bilan</button>
+          <button onclick="window.location.href='RapportSt1.docx'">Rapport</button>
         </div>
       </div>
     </div>
@@ -888,61 +1037,143 @@
       <div class="project-overlay">
         <h4>Stage 2</h4>
         <div class="project-buttons">
-          <button>Admin</button>
-          <button>Clients</button>
-          <button>Contexte</button>
           <button>Présentation</button>
+          <button>Attestation</button>
+          <button>Bilan</button>
+          <button>Rapport</button>
+          <button>Démo</button>
         </div>
       </div>
     </div>
   </div>
 </section>
+<section class="section" id="glpi">
+  <h2>GLPI</h2>
+  <div class="glpi-container">
+    <div class="glpi-card">
+      <h3>Installation & Configuration</h3>
+      <p>
+        Mise en place de GLPI sur un serveur local , avec configuration complète de la base de données adaptée à la gestion du projet Supercarweb.
+      </p>
+    </div>
 
-<!-- Veille Technologique -->
+
+    <div class="glpi-card">
+      <h3> Gestion des matériel </h3>
+      <p>
+        Suivi des ressources utilisées pour le projet Supercarweb : ordinateurs et téléphones personnels pour le développement et le design, utilisation de Canva Pro pour la création de visuels, et inspiration
+      </p>
+    </div>
+
+    <div class="glpi-card">
+      <h3>Déploiement de Projet</h3>
+      <p>
+        Mise en ligne du projet sur un serveur ou un hébergement cloud (AlwaysData,..). 
+         Gestion des mises à jour et optimisation 
+        des performances pour un fonctionnement stable et sécurisé.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
 <section class="section" id="veilleTech">
   <h2>Veille Technologique</h2>
-  <div class="veille-grid">
+  <div class="veille-grid" id="veille-container">
+    <!-- Les cartes seront générées ici -->
+  </div>
+</section>
 
-    <div class="veille-card">
-      <h3>Cybersécurité et IA</h3>
-      <p>L’intelligence artificielle est de plus en plus utilisée pour détecter les cyberattaques (anomalies réseaux, phishing, ransomwares). Mais elle est aussi exploitée par les hackers pour automatiser leurs attaques.</p>
-      <a href="https://www.zdnet.fr/actualites/cybersecurite/" target="_blank" rel="noopener">Lire plus</a>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const veilleData = [
+    {
+      title: "Cybersécurité et IA",
+      summary: "Recevez les dernières nouvelles en cybersécurité et IA directement par newsletter.",
+      url: "https://www.zdnet.fr/actualites/cybersecurite/",
+      linkText: "En savoir plus",
+      image: "image/Iatech.jpg"
+    },
+    {
+      title: "Google Alerts",
+      summary: "Recevez des notifications par email pour tout sujet ou mot-clé.",
+      url: "https://www.google.com/alerts/create?query=cybers%C3%A9curit%C3%A9+IA",
+      linkText: "En savoir plus",
+      image: "image/Googletech.jpg"
+    },
+    {
+      title: "Flux RSS par email",
+      summary: "Recevez automatiquement les nouveautés via flux RSS grâce à Blogtrottr.",
+      url: "https://blogtrottr.com/?feed=https://www.zdnet.fr/feeds/rss/actualites/&email=randrianitovina@gmail.com",
+      linkText: "En savoir plus",
+      image: "image/Fluxrsstech.jpg"
+    }
+  ];
+
+  const container = document.getElementById("veille-container");
+
+  veilleData.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("veille-card");
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.title}" class="veille-img">
+      <h3>${item.title}</h3>
+      <p>${item.summary}</p>
+      <a href="${item.url}" target="_blank" rel="noopener">${item.linkText}</a>
+    `;
+    container.appendChild(card);
+  });
+});
+</script>
+
+
+
+
+
+
+  <!-- Contact -->
+  <!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contactez-moi</h2>
+  <div class="contact-container">
+    <!-- Carte d'informations personnelles -->
+    <div class="contact-info">
+      <h3>Mes coordonnées</h3>
+      <p><strong>Téléphone :</strong> +230 54515712</p>
+      <p><strong>Email :</strong> <a href="mailto:randrianitovina@gmail.com">randrianitovina@gmail.com</a></p>
+      <p><strong>Adresse :</strong> Orchard Tower, Quatre Bornes, Mauritius</p>
     </div>
 
-    <div class="veille-card">
-      <h3>Cloud Computing</h3>
-      <p>Le cloud hybride et multi-cloud dominent le marché. Les entreprises cherchent plus de sécurité, de flexibilité et d’optimisation des coûts via des solutions comme AWS, Azure ou Google Cloud.</p>
-      <a href="https://www.lemondeinformatique.fr/cloud/" target="_blank" rel="noopener">Lire plus</a>
-    </div>
+    <!-- Formulaire de contact -->
+    <div class="contact-form">
+      <h3>Envoyez-moi un message</h3>
+      <form action="mailto:randrianitovina@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="Nom" required placeholder="Votre nom">
 
-    <div class="veille-card">
-      <h3>Intelligence Artificielle Générative</h3>
-      <p>L’IA générative (ChatGPT, Midjourney) transforme la création de contenus. Elle impacte la programmation, la productivité et même la cybersécurité. Les débats sur l’éthique et la régulation s’intensifient.</p>
-      <a href="https://openai.com/blog" target="_blank" rel="noopener">Lire plus</a>
-    </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required placeholder="Votre email">
 
+        <label for="subject">Objet</label>
+        <input type="text" id="subject" name="Objet" required placeholder="Objet du message">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required placeholder="Votre message..."></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
   </div>
 </section>
 
 
 
 
-  <!-- Contact -->
-  <section id="contact">
-  <footer>
-    <p>Contactez-moi : <a href="mailto:randrianitovina@gmail.com">randrianitovina@gmail.com</a></p>
-    <div class="social-links">
-      <a href="##" target="_blank" rel="noopener">LinkedIn</a> | 
-      <a href="#" target="_blank" rel="noopener">Facebook</a> | 
-      <a href="#" target="_blank" rel="noopener">Twitter</a>
-    </div>
-  </footer>
-</section>
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* Mobile menu toggle */
+  
   const menuBtn = document.getElementById('menuToggle');
   const navLinksContainer = document.querySelector('header nav > div:nth-child(2)');
   if (menuBtn && navLinksContainer) {
@@ -952,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
       menuBtn.setAttribute('aria-expanded', String(!expanded));
     });
-    // Close menu when a link is clicked (mobile)
+    
     navLinksContainer.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         if (navLinksContainer.classList.contains('show')) {
