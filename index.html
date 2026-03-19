@@ -746,14 +746,28 @@
   }
 }
 
+/* Definition boxes */
+.section-definition {
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  padding: 20px 25px;
+  background: #fff;
+  border-left: 4px solid #0056b3;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
 
+.section-definition h4 {
+  color: #002855;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
 
-
-
-
-
-
-
+.section-definition p {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.6;
+}
 
   </style>
 
@@ -822,9 +836,6 @@
       }
     }
 
-    /* small tweak to footer social on tiny screens */
-    
-
     /* simple animation for opened burger (optional but subtle) */
     .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .menu-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
@@ -887,9 +898,9 @@
     <h2>Salut ! Je suis Fabio</h2>
     <p>
       Étudiant en BTS SIO, je développe progressivement mes compétences en programmation, en développement web et en gestion de bases de données.
-      À travers mes projets et recherches personnelles, j’apprends à concrétiser mes idées en solutions fonctionnelles.
+      À travers mes projets et recherches personnelles, j'apprends à concrétiser mes idées en solutions fonctionnelles.
       Curieux et motivé, je cherche constamment à approfondir mes connaissances et à les mettre en pratique.
-      Ce portfolio reflète mon parcours, mes projets et mon évolution dans le domaine de l’informatique.
+      Ce portfolio reflète mon parcours, mes projets et mon évolution dans le domaine de l'informatique.
     </p>
   </section>
 
@@ -900,8 +911,8 @@
       <div class="timeline-item">
         <h3>Septembre 2023 – Stagiaire</h3>
         <span>Welthungerhilfe</span>
-        <p>Stage à l’ONG allemande Welthungerhilfe (Antananarivo, Madagascar). 
-        Travaux bureautiques, création de documents Word/Excel, gestion de données et présentations PowerPoint adaptées aux besoins de l’équipe.</p>
+        <p>Stage à l'ONG allemande Welthungerhilfe (Antananarivo, Madagascar). 
+        Travaux bureautiques, création de documents Word/Excel, gestion de données et présentations PowerPoint adaptées aux besoins de l'équipe.</p>
       </div>
       <div class="timeline-item">
         <h3>Janvier – Juillet 2025 – Assistant Client</h3>
@@ -911,7 +922,7 @@
       <div class="timeline-item">
         <h3>Juin – Juillet 2025 – Stagiaire</h3>
         <span>CDL Knits</span>
-        <p>Développement d’une application mobile pour la gestion et le suivi de maintenance des machines, optimisant les processus internes de l’entreprise.</p>
+        <p>Développement d'une application mobile pour la gestion et le suivi de maintenance des machines, optimisant les processus internes de l'entreprise.</p>
       </div>
     </div>
   </section>
@@ -927,7 +938,7 @@
       <div class="timeline-content">
         <h3>Baccalauréat</h3>
         <h4>Lycée Saint-Michel, Antananarivo (Madagascar)</h4>
-        <p>J’ai effectué ma scolarité au Lycée Saint-Michel à Antananarivo, Madagascar, où j’ai obtenu mon baccalauréat avant de poursuivre mon parcours en BTS SIO.</p>
+        <p>J'ai effectué ma scolarité au Lycée Saint-Michel à Antananarivo, Madagascar, où j'ai obtenu mon baccalauréat avant de poursuivre mon parcours en BTS SIO.</p>
       </div>
     </div>
 
@@ -936,7 +947,7 @@
       <div class="timeline-content">
         <h3>DELF B2</h3>
         <h4>Alliance Française, Antananarivo (Madagascar)</h4>
-        <p>J’ai suivi des cours à l’Alliance Française à Antananarivo, Madagascar, où j’ai obtenu le diplôme DELF B2, avant de poursuivre mon parcours en BTS SIO.</p>
+        <p>J'ai suivi des cours à l'Alliance Française à Antananarivo, Madagascar, où j'ai obtenu le diplôme DELF B2, avant de poursuivre mon parcours en BTS SIO.</p>
       </div>
     </div>
 
@@ -945,7 +956,7 @@
       <div class="timeline-content">
         <h3>BTS SIO</h3>
         <h4>MCCI Business School, Maurice</h4>
-        <p>Je suis actuellement étudiant en 2ᵉ année de BTS à la MCCI Business School à Maurice, où je poursuis ma formation afin d’obtenir mon diplôme.</p>
+        <p>Je suis actuellement étudiant en 2ᵉ année de BTS à la MCCI Business School à Maurice, où je poursuis ma formation afin d'obtenir mon diplôme.</p>
       </div>
     </div>
 
@@ -1006,7 +1017,7 @@
         </div>
       </div>
     </div>
-    <div class="project-card" style="background-image: url('vms.jpg');">
+    <div class="project-card" style="background-image: url('Vms.png');">
       <div class="project-overlay">
         <h4>VMS</h4>
         <div class="project-buttons">
@@ -1035,13 +1046,13 @@
     </div>
     <div class="project-card" style="background-image: url('designapp.png');">
       <div class="project-overlay">
-        <h4>Stage 2</h4>
+        <h4>DesignApp</h4>
         <div class="project-buttons">
           <button>Présentation</button>
           <button>Attestation</button>
           <button>Bilan</button>
           <button>Rapport</button>
-          <button>Démo</button>
+          <button onclick="window.location.href='https://mobile-scanner-t8mu.vercel.app/'">Démo</button>
         </div>
       </div>
     </div>
@@ -1061,7 +1072,7 @@
     <div class="glpi-card">
       <h3> Gestion des matériel </h3>
       <p>
-        Suivi des ressources utilisées pour le projet Supercarweb : ordinateurs et téléphones personnels pour le développement et le design, utilisation de Canva Pro pour la création de visuels, et inspiration
+        Suivi des ressources utilisées pour le projet Supercarweb : ordinateurs et téléphones personnels pour le développement et le design, utilisation de Canva Pro pour la création de visuels, et inspiration
       </p>
     </div>
 
@@ -1074,6 +1085,14 @@
       </p>
     </div>
   </div>
+
+  <!-- Définition GLPI -->
+  <div class="section-definition">
+    <h4>Qu'est-ce que GLPI ?</h4>
+    <p>
+      GLPI (Gestionnaire Libre de Parc Informatique) est un logiciel open source de gestion des services informatiques (ITSM). Il permet aux organisations de gérer leur parc de matériels et de logiciels, de suivre les incidents et les demandes via un système de tickets, et de planifier les interventions. GLPI offre également des fonctionnalités de gestion des contrats, des fournisseurs et des budgets, ce qui en fait un outil complet pour les équipes informatiques souhaitant centraliser et optimiser leur gestion du système d'information.
+    </p>
+  </div>
 </section>
 
 
@@ -1082,6 +1101,14 @@
   <h2>Veille Technologique</h2>
   <div class="veille-grid" id="veille-container">
     <!-- Les cartes seront générées ici -->
+  </div>
+
+  <!-- Définition Veille Technologique -->
+  <div class="section-definition">
+    <h4>Qu'est-ce que la Veille Technologique ?</h4>
+    <p>
+      La veille technologique est un processus continu de surveillance et d'analyse de l'environnement technologique, visant à anticiper les évolutions, les innovations et les tendances dans un domaine donné. Elle consiste à collecter, traiter et diffuser des informations pertinentes sur les nouvelles technologies, les outils émergents et les pratiques du secteur informatique. Pour un professionnel de l'IT, pratiquer une veille régulière permet de rester à jour, d'adapter ses compétences aux évolutions du marché et de proposer des solutions innovantes dans ses projets.
+    </p>
   </div>
 </section>
 
